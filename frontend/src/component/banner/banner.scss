@@ -1,0 +1,28 @@
+.banner{
+    height:33vh;
+    .banner-row{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 100%;
+        flex-wrap: wrap;
+        .banner-col{
+            display: flex;
+            align-items: center;
+            gap:7px;
+            border: 1px solid #0000001f;
+            justify-content: center;
+            width: 240px;
+            height: 50px;
+            cursor: pointer;
+            transition: .3s ease-in;
+            background-color: #fff;
+            .MuiSvgIcon-root{
+                color: teal;
+            }
+            &:hover{
+                transform: scale(1.04);
+            }
+        }
+    }
+}

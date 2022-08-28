@@ -1,0 +1,123 @@
+.topbar{
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+    .topbar-content{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .top-email{
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            img{
+                width: 20px;
+                height: 20px;
+            }
+            span{
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+        .top-user{
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            .MuiSvgIcon-root{
+               color: #BB001B !important;
+            }
+            span{
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+    }
+    .topbar-social{
+        .social-image{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            img{
+                width: 23px;
+                height: 23px;
+                transition: 0.3s ease-in-out;
+                cursor: pointer;
+                &:hover{
+                    transform: scale(1.3);
+                }
+            }
+        }
+    }
+}
+
+// navbar style
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 4px 40px;
+    justify-content: space-between;
+    z-index: 999;
+    .nav-item{
+      display: flex;
+      align-items: center;
+      gap:20px;
+      width: 80%;
+      span{
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 600;
+        padding-left: 30px;
+        transition: .4s ease-in-out;
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.3);
+            color: #ba0e28dc;
+        }
+        a.active{
+            color: #BB001B;
+        }
+      }
+    }
+    .nav-link{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: space-between;
+        width: 20%;
+        .auth{
+            display: flex;
+            align-items: center;
+            gap:10px;
+            cursor: pointer;
+            transition: .3s ease-in-out;
+            &:hover{
+                transform: scale(1.3);
+                color: #4267B2;
+            }
+            .MuiSvgIcon-root{
+                font-size: 16px;
+            }
+            span{
+              font-weight: 500;
+            }
+        }
+        .nav-special{
+            gap: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-right: 30px;
+            .MuiSvgIcon-root{
+                gap: 20px;
+                cursor: pointer;
+                transition: .3s ease-in-out;
+                &:hover{
+                    transform: scale(1.3);
+                }
+            }
+        }
+    }
+}
