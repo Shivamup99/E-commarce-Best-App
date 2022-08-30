@@ -57,6 +57,10 @@
         display: flex;
         transform: translateX(0vw);
         transition: all 1.5s ease;
+        h1{
+            text-align: center;
+            letter-spacing: 1.2px;
+        }
         .slide{
             width: 100vw;
             height: 100vh;

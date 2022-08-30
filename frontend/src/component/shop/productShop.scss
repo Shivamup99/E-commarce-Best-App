@@ -1,0 +1,100 @@
+.products-shop{
+    padding: 0px 40px;
+    .product-shop-row{
+        display: flex;
+        .product-shop-col-1{
+            width: 300px;
+            height: 300px;
+            box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+            h2{
+                margin-bottom: 20px;
+                color: gray;
+                letter-spacing: 1.2px;
+                font-weight: 600;
+                text-align: center;
+            }
+            .shop-btn{
+                display: flex;
+                margin-left: 80px;
+                justify-content: center;
+                width: 80px;
+                padding: 5px 15px;
+                font-size: 16px;
+                font-weight: 600;
+                letter-spacing: 1.3px;
+                border: none;
+                outline: none;
+                background-color: transparent;
+                cursor: pointer;
+                transition: .3s ease-in-out;
+                &:hover{
+                    transform: scale(1.1);
+                    color: white;
+                    background-color: gray;
+                }
+            }
+        }
+        .product-shop-col-2{
+            margin: 0px 60px;
+            .shop-products{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap: 50px;
+            }
+        }
+    }
+}
+
+.shop-pegination{
+    margin-top: 200px;
+    display: flex !important;
+    justify-content: center;
+    .paginationBttns{
+        width: 80%;
+        height: 40px;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        a{
+            padding: 5px 10px;
+            margin: 8px;
+            border-radius: 5px;
+            border: 1px solid #000000;
+            color: #000000;
+            cursor: pointer;
+            &:hover{
+                color: #ffffff;
+                background-color: #ff0000;
+            }
+        }
+        .paginationActive{
+            a{
+                color: #ffffff;
+                background-color: #ff0000; 
+            }
+        }
+        .paginationDisabled a{
+            color: rgba(128,128,128,0.11);
+            background-color: rgba(128,128,128,.11);
+            &:hover{
+                color: rgba(128,128,128,0.11);
+                background-color: rgba(128,128,128,.11);
+            }
+        }
+    } 
+}
+
+
+
+
+.product-shop{
+    .card-img{
+        width: 350px;
+        height: 400px;
+        img{
+            width: 350px;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

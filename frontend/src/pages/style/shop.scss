@@ -1,0 +1,19 @@
+.shop{
+    .shop-row{
+        min-height: 100vh;
+        margin: 50px 0;
+        display: flex;
+        padding: 0 10px;
+        .shop-col{
+            &:first-child{
+                flex: 1;
+            }
+            &:last-child{
+                flex: 4;
+            }
+        }
+    }
+    .shop-footer{
+        border-top: 1px solid #000000;
+    }
+}
