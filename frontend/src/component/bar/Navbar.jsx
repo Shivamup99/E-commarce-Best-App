@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { FavoriteBorder, LocalMall, Login } from '@mui/icons-material'
 import { NavLink } from 'react-router-dom'
+import Badge from '@mui/material/Badge';
+import { Store } from '../../store';
 
 const Navbar = () => {
+  const {state} = useContext(Store)
+  const {cart,wish} = state
+
   return (
     <div className='navbar'>
       <div className="nav-item">
@@ -19,8 +24,14 @@ const Navbar = () => {
         </NavLink>
         </div>
         <div className="nav-special">
+        <Badge badgeContent={wish.wishItems.length} color='primary'>
           <FavoriteBorder/>
-          <NavLink to='/shop/cart' activeClassName='active'><LocalMall/></NavLink>
+        </Badge>
+          <NavLink to='/shop/cart' activeClassName='active'>
+            <Badge badgeContent={cart.cartItems.length}  color="secondary">
+            <LocalMall/>
+            </Badge>
+          </NavLink>
         </div>
       </div>
     </div>
